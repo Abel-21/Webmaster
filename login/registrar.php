@@ -1,15 +1,32 @@
 <?php
-$con=mysqli_connect('localhost','root','','formulario')or die('Error en la conexion con el servidor');
+include("conexion.php");
 
-$sql="INSERT INTO registro VALUES('".$_POST["nombre"]."','".$_POST["matricula"]."', '".$_POST["contraseña"]."','".$_POST["usuario"]."')";
+if(isset($_POST['registrar'])){
+	if (strlen($_POST['nombre']) >=1 && strlen($_POST['matricula']) >=1 && strlen($_POST['correo']) >=1 &&strlen($_POST['password']) >=1 && strlen($_POST['tusuario']) >=1){
 
-	$resultado=mysqli_query($con,$sql);
+		$nombre = trim($_POST['nombre']);
+		$matricula = trim($_POST['matricula']);
+		$correo = trim($_POST['correo']);
+		$password = trim($_POST['password']);
+		$tusuario =trim($_POST['tusuario']);
 
-		if($resultado){
-			echo "<script> alert ('Usted a quedado registrado'); window.location='login.html'</script>";
+		$consulta = "INSERT INTO usuarios(nombre,matricula,correo,password,tusuario) VALUES ('$nombre','$matricula','$correo','$password','$tusuario')";
+		$resultado = mysqli_query($conexion,$consulta);
+
+		if ($resultado) {
+			?>
+			<h3 class="ok">Te has inscrito correctamente!! :D</h3>
+			<?php
 		}else{
-		printf("Errormessage: %s\n", mysqli_error($con));
+			?>
+			<h3 class="bad">ups ha ocurrido un error</h3>
+			<?php
+		}
+	} else{
+		?>
+			<h3 class="bad">por favor completa los campos!!</h3>
+			<?php
+	}
 
-
-	mysqli_close($con);
+}
 ?>

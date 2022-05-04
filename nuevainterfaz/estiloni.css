@@ -1,53 +1,53 @@
 @import url('http://fonts.googleapis.com/css2?family=Montserrat&dispaly=swap');
 
- body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-size: cover;
-    background-attachment: fixed;
- }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
- .navbar{
-    background-color: #CA5C36;
-    width: 100%;
-    height: 6em;
- }
+.navbar {
+  background-color: #CA5C36;
+  width: 100%;
+  height: 6em;
+}
 
-#fondo{
+#fondo {
   background-image: url(img/libros.jpg);
   width: 100%;
   height: 100vh;
   background-size: cover;
 }
 
-#centro{
+#centro {
   align-items: center;
   color: white;
   left: 30%;
   top: 40%;
-  font-size:50px;
+  font-size: 50px;
   width: 70%;
   margin: 0px auto;
-  padding:20px;
+  padding: 20px;
   position: absolute;
   padding-left: 0px;
 }
 
-.buscar{
+.buscar {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   left: 50%;
   top: 60%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: #CA9236;
   padding: 10px;
   height: 80px;
   border-radius: 40px;
 }
 
-.buscar-texto{
+.buscar-texto {
   border: none;
   background: none;
   outline: none;
@@ -59,7 +59,7 @@
   width: 0;
 }
 
-.boton{
+.boton {
   width: 40px;
   height: 40px;
   text-decoration: none;
@@ -67,124 +67,128 @@
   font-size: 30px;
 }
 
-@media screen and (min-width: 480px){
-  .buscar:hover>.buscar-texto{
+@media screen and (min-width: 480px) {
+  .buscar:hover>.buscar-texto {
     width: 190px;
   }
 }
 
-@media screen and (min-width: 768px){
-  .buscar:hover>.buscar-texto{
+@media screen and (min-width: 768px) {
+  .buscar:hover>.buscar-texto {
     width: 300px;
   }
 }
 
-@media screen and (min-width: 1024px){
-  .buscar:hover>.buscar-texto{
+@media screen and (min-width: 1024px) {
+  .buscar:hover>.buscar-texto {
     width: 500px;
   }
 }
 
-.galeria{
-    font-family: Arial, Helvetica, sans-serif;
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+.galeria {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.galeria h1{
-    text-align: center;
-    margin:20px 0 15px 0;
-    font-weight: 300;
-    color: #CA9236;
+.galeria h1 {
+  text-align: center;
+  margin: 20px 0 15px 0;
+  font-weight: 300;
+  color: #CA9236;
 }
 
-.linea{
-    border-top: 5px solid #CA5C36;
-    margin-bottom: 40px;
+.linea {
+  border-top: 5px solid #CA5C36;
+  margin-bottom: 40px;
 }
 
-.contenedor-imagenes{
-    display:flex;
-    width: 85%;
-    margin: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border-radius:3px;
+.contenedor-imagenes {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
 }
 
-.contenedor-imagenes .imagen{
-    width: 32%;
-    position: relative;
-    height:250px;
-    margin-bottom:5px;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
-}
-.imagen img{
-    width: 100%;
-    height:100%;
-    object-fit: cover;
+.contenedor-imagenes .imagen {
+  width: 32%;
+  position: relative;
+  height: 250px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
 }
 
-.overlay{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background:rgba(0, 0, 0, 0.5) ;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    transition: .5s ease;
-    text-decoration: none;
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.overlay a{
-    color: #fff;
-    font-weight: 300;
-    font-size:30px;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: .5s ease;
+  text-decoration: none;
 }
 
-.imagen:hover .overlay{
-    height:100%;
-    cursor: pointer;
+.overlay a {
+  color: #fff;
+  font-weight: 300;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
 
-@media screen and (max-width:1000px){
-    .contenedor-imagenes{
-        width: 95%;
-    }
+.imagen:hover .overlay {
+  height: 100%;
+  cursor: pointer;
 }
 
-@media screen and (max-width:700px){
-    .contenedor-imagenes{
-        width: 90%;
-    }
-    .contenedor-imagenes .imagen{
-        width: 48%;
-    }
+@media screen and (max-width:1000px) {
+  .contenedor-imagenes {
+    width: 95%;
+  }
 }
 
-@media screen and (max-width:450px){
-    h1{
-        font-size:22px;
-    }
-    .contenedor-imagenes{
-        width: 98%;
-    }
-    .contenedor-imagenes .imagen{
-        width: 80%;
-    }
+@media screen and (max-width:700px) {
+  .contenedor-imagenes {
+    width: 90%;
+  }
+
+  .contenedor-imagenes .imagen {
+    width: 48%;
+  }
 }
 
-.col-md-6{
-  color:#CA9236;
+@media screen and (max-width:450px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .contenedor-imagenes {
+    width: 98%;
+  }
+
+  .contenedor-imagenes .imagen {
+    width: 80%;
+  }
+}
+
+.col-md-6 {
+  color: #CA9236;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -192,7 +196,8 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio */
 }
 
 .responsive-iframe {
@@ -211,34 +216,35 @@
   padding-top: 30px;
 }
 
-#iconos a{
+#iconos a {
   text-decoration: none;
   color: #CA9236;
   font-size: 25px;
   padding-left: 10px;
   align-items: center;
-  
+
 }
 
-.contacto i{
+.contacto i {
   font-size: 35px;
   color: #CA9236;
   padding-left: 10px;
-  
+
 }
+
 /*libros*/
 
-.listadelibros h1{
-    
-    margin:20px 0 15px 0;
-    font-weight: 300;
-    color: #CA9236;
-    text-align: left;
-    padding-left: 2em;
+.listadelibros h1 {
+
+  margin: 20px 0 15px 0;
+  font-weight: 300;
+  color: #CA9236;
+  text-align: left;
+  padding-left: 2em;
 
 }
 
-.list-group{
+.list-group {
   padding-left: 4em;
   margin: 0;
   width: 70%;
@@ -251,6 +257,7 @@
   padding: 10px;
   margin-top: 10px;
 }
+
 #main-footer p {
   margin: 0;
 }
@@ -266,6 +273,7 @@
   justify-content: center;
   margin-top: -10px;
 }
+
 .social-buttons__button {
   margin: 10px 5px 0;
 }
@@ -280,6 +288,7 @@
   height: 70px;
   text-decoration: none;
 }
+
 .social-button__inner {
   position: relative;
   display: flex;
@@ -291,19 +300,23 @@
   background: #fff;
   text-align: center;
 }
+
 .social-button i,
 .social-button svg {
   position: relative;
   z-index: 1;
   transition: 0.3s;
 }
+
 .social-button i {
   font-size: 28px;
 }
+
 .social-button svg {
   height: 40%;
   width: 40%;
 }
+
 .social-button::after {
   content: "";
   position: absolute;
@@ -315,10 +328,14 @@
   border-radius: 100%;
   transition: 0.3s;
 }
-.social-button:focus, .social-button:hover {
-  color: #fff!important;
+
+.social-button:focus,
+.social-button:hover {
+  color: #fff !important;
 }
-.social-button:focus::after, .social-button:hover::after {
+
+.social-button:focus::after,
+.social-button:hover::after {
   width: 100%;
   height: 100%;
   margin-left: -50%;
@@ -327,35 +344,39 @@
 .social-button--facebook {
   color: #3b5998 !important;
 }
+
 .social-button--facebook::after {
   background: #3b5998;
 }
+
 .social-button--twitter {
   color: #1da1f2 !important;
 }
+
 .social-button--twitter::after {
   background: #1da1f2;
 }
-.social-button--pinterest{
- color: #bd081c !important;
+
+.social-button--pinterest {
+  color: #bd081c !important;
 }
+
 .social-button--pinterest::after {
   background: #bd081c;
 }
+
 .social-button--youtube {
- color: #ff0000 !important;
+  color: #ff0000 !important;
 }
+
 .social-button--youtube::after {
   background: #ff0000;
 }
+
 .social-button--instagram {
- color: #c13584 !important;
+  color: #c13584 !important;
 }
+
 .social-button--instagram::after {
   background: #c13584;
 }
-
-
-
-
-

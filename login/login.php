@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Developer Abel</title>
- <link rel="stylesheet" href="css/estilo.css">	
+ <link rel="stylesheet" href="estilo.css">	
 </head>
 <body>
 
@@ -15,7 +15,7 @@
       <button type="button" class="botoncambiarcaja" onclick="registrarvai()" id="vaibtnregistrar">Registrar</button>
     </div>
 
-    <form action="logica/loguear.php" method="POST" id="frmlogin" class="grupo-entradas">
+    <form action="loguear.php" method="POST" id="frmlogin" class="grupo-entradas">
       <div class="ub1">&#128273; Ingresar nombre de usuario</div>
       <input type="text" name="nombre" placeholder="Ingresar usuario">
       <div class="ub1">&#128274; Ingresar contraseña</div>
@@ -29,7 +29,7 @@
         </div>
       </form>
 
-      <form method="POST" action="logica/registrar.php" id="frmregistrar" class="grupo-entradas">
+      <form method="POST" action="registrar.php" id="frmregistrar" class="grupo-entradas">
         <div class="ub1">&#128273; Nombre </div>
         <input type="text" name="nombre" placeholder="Nombre completo">
         <div class="ub1">&#128274; Matricula</div>

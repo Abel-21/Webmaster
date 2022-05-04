@@ -18,6 +18,13 @@
   font-family: Arial, Helvetica, sans-serif;
  }
 
+ .col-lg-4 a{
+   color: #FFFFFF;
+   text-decoration: none;
+   margin-left: 60%;
+   
+ }
+
  .carousel-inner{
    max-height: 50rem;
    max-width: 90rem;
